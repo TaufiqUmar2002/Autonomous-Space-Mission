@@ -1,0 +1,10 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    name: MISSION-REGISTRY-SERVICE
+
+  logging:
+    level:
+      org.springframework.web: INFO

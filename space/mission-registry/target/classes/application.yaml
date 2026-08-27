@@ -1,0 +1,6 @@
+server:
+  port: 80801
+
+spring:
+  application:
+    name: mission-registry
