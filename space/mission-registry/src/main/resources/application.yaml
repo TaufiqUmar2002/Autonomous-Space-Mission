@@ -4,3 +4,7 @@ server:
 spring:
   application:
     name: MISSION-REGISTRY-SERVICE
+
+  logging:
+    level:
+      org.springframework.web: DEBUG
