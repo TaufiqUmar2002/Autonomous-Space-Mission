@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package grpc;
+
+import "google/protobuf/timestamp.proto";
+
+option java_multiple_files = true;
+option java_package = "com.umar.grpc";
+option java_outer_classname = "ExternalIntegrationProto";
+
+service ExternalIntegrationService {
+
+ rpc GetCachedTle(GetCachedTleRequest) returns (GetCachedTleResponse);
+ rpc StreamProviderHealth (StreamProviderHealthRequest) returns (stream ProviderHealthUpdate);
+
+}
+
+message GetCachedTleRequest {
+  string norad_id = 1;
+}
+
+message GetCachedTleResponse {
+    int32  norad_id = 1;
+    string tle_line1 = 2;
+    string tle_line2 = 3;
+    google.protobuf.Timestamp cached_at = 4;
+}
+
+message StreamProviderHealthRequest {
+    repeated string provider_ids = 1;
+}
+
+message ProviderHealthUpdate {
+    string provider_id = 1;
+    string previous_state = 2;
+    string new_state = 3;
+    string reason = 4;
+    google.protobuf.Timestamp timestamp = 5;
+}
