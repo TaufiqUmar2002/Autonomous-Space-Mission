@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import java.time.Duration;
+import java.time.LocalDateTime;
 
 @Service
 @RequiredArgsConstructor
@@ -57,6 +58,11 @@ public class ExternalIntegrationService implements IExternalIntegrationService{
             return null;
         }
         return null;
+    }
+
+    @Override
+    public void getWeatherHistory(LocalDateTime startDate, LocalDateTime endDate) {
+
     }
 
     private TleData liveTleFallback(String nordId,Exception e){
