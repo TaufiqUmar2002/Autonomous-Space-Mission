@@ -1,0 +1,102 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    name: EXTERNAL-INTEGRATION-SERVICE
+  devtools:
+    add-properties: true
+
+  datasource:
+    url: jdbc:postgresql://localhost:6001/integration_db?options=-c%20TimeZone=UTC
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  celestrak:
+    api:
+      url: https://celestrak.org
+
+
+
+  logging:
+    level:
+      com.umar: DEBUG
+#
+resilience4j:
+#  # =========================================================================
+#  # 1. CIRCUIT BREAKER CORE CONFIGURATIONS (BR-14)
+#  # =========================================================================
+  circuitbreaker:
+    configs:
+#      # Universal architectural template inherited by individual providers
+      default:
+        slidingWindowType: COUNT_BASED
+        slidingWindowSize: 20                  # Track the last 20 sequential calls
+        minimumNumberOfCalls: 10               # Minimum data points needed before calculating error rate
+        failureRateThreshold: 50.0             # Trip circuit to OPEN if 50% or more calls fail
+        slowCallRateThreshold: 75.0            # Trip if 75% or more calls are slow
+        slowCallDurationThreshold: 5000ms      # Calls taking longer than 5 seconds are marked "slow"
+        waitDurationInOpenState: 60000ms       # Wait 60 seconds in OPEN state before testing with HALF_OPEN
+        permittedNumberOfCallsInHalfOpenState: 5 # Send 5 trial calls during probe testing
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        recordExceptions:
+          - java.net.SocketTimeoutException
+          - java.net.http.HttpConnectTimeoutException
+          - org.springframework.web.client.ResourceAccessException
+          - feign.RetryableException
+#
+#    # Custom instantiated instances assigned per external provider identity
+    instances:
+#      # CelesTrak TLE Fetch Engine (EXT-01)
+      paymentService:
+        baseConfig: default
+        slidingWindowSize: 30
+        failureRateThreshold: 40.0             # Stricter threshold since orbit calculations are high-frequency
+#
+#      # NOAA Space Weather Prediction Engine (EXT-02, EXT-03)
+#      noaaApi:
+#        baseConfig: default
+#        slidingWindowSize: 15
+#        slowCallDurationThreshold: 3000ms      # Faster timeout limit tailored to environmental metrics
+#
+#      # NASA Near-Earth Object Information Stream (EXT-04)
+#      nasaApi:
+#        baseConfig: default
+#        slidingWindowSize: 10                  # Smaller window size optimized for episodic analysis tasks
+#
+#  # =========================================================================
+#  # 2. RETRY PATTERN CONFIGURATIONS (BR-14)
+#  # =========================================================================
+#  retry:
+#    configs:
+#      default:
+#        maxAttempts: 3                         # Try up to 3 times before initiating a circuit error step
+#        waitDuration: 1000ms                   # Base interval gap between processing attempts
+#        enableExponentialBackoff: true
+#        exponentialBackoffMultiplier: 2.0      # Scale gaps exponentially (1s, then 2s, up to max)
+#        retryExceptions:
+#          - org.springframework.web.client.ResourceAccessException
+#          - java.io.IOException
+#          - java.util.concurrent.TimeoutException
+#        ignoreExceptions:
+#          - org.springframework.web.client.HttpClientErrorException.NotFound # Do not retry clean 404s (EXT-01, EXT-05)
+#
+#    instances:
+#      celestrakApi:
+#        baseConfig: default
+#      noaaApi:
+#        baseConfig: default
+#      nasaApi:
+#        baseConfig: default
