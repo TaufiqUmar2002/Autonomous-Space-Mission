@@ -18,6 +18,7 @@ public class CircuitBreakerListenerConfig {
 
     @PostConstruct
     public void setupCircuitListeners() {
+        log.info("Setting up circuit breaker listeners");
         CircuitBreaker circuitBreaker = registry.circuitBreaker("celestrakApi");
         circuitBreaker.getEventPublisher()
                 .onStateTransition(event -> {
