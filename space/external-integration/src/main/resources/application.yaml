@@ -100,3 +100,6 @@ resilience4j:
 #        baseConfig: default
 #      nasaApi:
 #        baseConfig: default
+
+noaa:
+  base-url: https://services.swpc.noaa.gov

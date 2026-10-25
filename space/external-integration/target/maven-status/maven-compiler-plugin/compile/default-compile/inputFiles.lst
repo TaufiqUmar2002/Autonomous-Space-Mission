@@ -6,7 +6,9 @@ D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\ext
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\entity\Provider.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\exchange\CelesTrakFeignClient.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\exchange\FeignClientInterceptor.java
-D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\exchange\NoaaFeignClient.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\exchange\GeomagneticFeignClient.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\exchange\RadiationFeignClient.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\exchange\SolarFeignClient.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\ExternalIntegrationApplication.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\grpc\ExternalIntegrationGrpcService.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\hook\DefaultTleParser.java
@@ -17,6 +19,7 @@ D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\ext
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\repository\ProviderRepository.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\service\ExternalIntegrationService.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\service\IExternalIntegrationService.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\service\NoaaSpaceWeatherProvider.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\vault\OutboundExecutionPipeline.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\vault\VaultCredentialManager.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\target\generated-sources\protobuf\grpc-java\com\umar\grpc\ExternalIntegrationServiceGrpc.java

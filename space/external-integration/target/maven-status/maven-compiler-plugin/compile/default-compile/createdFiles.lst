@@ -2,6 +2,7 @@ com\umar\config\CircuitBreakerListenerConfig.class
 com\umar\grpc\ProviderHealthUpdate$Builder.class
 com\umar\grpc\ExternalIntegrationServiceGrpc$3.class
 com\umar\grpc\ExternalIntegrationServiceGrpc.class
+com\umar\exchange\RadiationFeignClient.class
 com\umar\service\ExternalIntegrationService.class
 com\umar\entity\Provider.class
 com\umar\grpc\GetCachedTleRequest$1.class
@@ -21,6 +22,7 @@ com\umar\model\ProviderCredentialSecret$ProviderCredentialSecretBuilder.class
 com\umar\model\ProviderCredentialSecret.class
 com\umar\grpc\ExternalIntegrationServiceGrpc$MethodHandlers.class
 com\umar\grpc\StreamProviderHealthRequest.class
+com\umar\exchange\SolarFeignClient.class
 com\umar\grpc\ExternalIntegrationServiceGrpc$4.class
 com\umar\grpc\ExternalIntegrationServiceGrpc$ExternalIntegrationServiceStub.class
 com\umar\grpc\ProviderHealthUpdate.class
@@ -30,12 +32,14 @@ com\umar\hook\DefaultTleParser.class
 com\umar\grpc\ExternalIntegrationServiceGrpc$ExternalIntegrationServiceBaseDescriptorSupplier.class
 com\umar\grpc\ExternalIntegrationServiceGrpc$ExternalIntegrationServiceBlockingStub.class
 com\umar\grpc\StreamProviderHealthRequestOrBuilder.class
+com\umar\service\NoaaSpaceWeatherProvider.class
 com\umar\grpc\ExternalIntegrationGrpcService.class
 com\umar\grpc\StreamProviderHealthRequest$1.class
 com\umar\grpc\GetCachedTleRequest.class
 com\umar\grpc\GetCachedTleResponseOrBuilder.class
 com\umar\grpc\ExternalIntegrationProto.class
 com\umar\exchange\FeignClientInterceptor.class
+com\umar\exchange\GeomagneticFeignClient.class
 com\umar\grpc\ExternalIntegrationServiceGrpc$ExternalIntegrationServiceFutureStub.class
 com\umar\ExternalIntegrationApplication.class
 com\umar\grpc\GetCachedTleRequestOrBuilder.class
@@ -50,5 +54,4 @@ com\umar\grpc\GetCachedTleResponse$1.class
 com\umar\grpc\ProviderHealthUpdate$1.class
 com\umar\grpc\ProviderHealthUpdateOrBuilder.class
 com\umar\grpc\StreamProviderHealthRequest$Builder.class
-com\umar\exchange\NoaaFeignClient.class
 com\umar\repository\CallHistoryRepository.class

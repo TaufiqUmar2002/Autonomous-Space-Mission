@@ -8,6 +8,7 @@ com\umar\payload\error\ApiError.class
 com\umar\payload\request\mission\SatelliteRegisterRequest$SatelliteRegisterRequestBuilder.class
 com\umar\payload\response\external\CurrentWeatherResponse$CurrentWeatherResponseBuilder.class
 com\umar\payload\response\external\CurrentWeatherResponse$Condition.class
+com\umar\payload\response\external\SpaceWeatherResponse.class
 com\umar\payload\response\external\TleData$TleDataBuilder.class
 com\umar\payload\response\external\TleData.class
 com\umar\payload\error\BatchValidationException.class
@@ -30,9 +31,12 @@ com\umar\enums\authIdentity\OutCome.class
 com\umar\enums\external\Outcome.class
 com\umar\payload\error\ValidationErrorResponse$ValidationErrorResponseBuilder.class
 com\umar\payload\response\external\CurrentWeatherResponse$Condition$Solar$SolarBuilder.class
+com\umar\payload\response\external\SpaceWeatherResponse$GeomagneticConditions.class
+com\umar\payload\response\external\SpaceWeatherResponse$RadiationConditions.class
 com\umar\payload\error\ApiException$ApiExceptionBuilder.class
 com\umar\payload\response\authIdentity\keyclock\KeycloakTokenResponse.class
 com\umar\enums\external\CircuitOverride.class
+com\umar\payload\response\external\SpaceWeatherResponse$SolarConditions.class
 com\umar\enums\missionRegistry\Status.class
 SatelliteDecommissionRequest.class
 com\umar\payload\request\mission\SatelliteUpdateRequest.class
@@ -45,7 +49,9 @@ com\umar\payload\error\ApiError$ApiErrorBuilder.class
 com\umar\payload\response\mission\MissionResponse$MissionResponseBuilder.class
 com\umar\payload\response\external\CurrentWeatherResponse$Condition$Geomagnetic.class
 com\umar\payload\response\external\CurrentWeatherResponse$Condition$Radiation.class
+com\umar\payload\response\external\SpaceWeatherResponse$RadiationReading.class
 com\umar\CommonApplication.class
+com\umar\payload\response\external\SpaceWeatherResponse$GeomagneticReading.class
 com\umar\payload\response\external\CurrentWeatherResponse$Condition$Solar.class
 com\umar\enums\external\Status.class
 com\umar\dto\SatelliteResponse.class

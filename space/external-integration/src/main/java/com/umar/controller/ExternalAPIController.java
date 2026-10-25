@@ -1,6 +1,7 @@
 package com.umar.controller;
 
 import com.umar.payload.response.external.CurrentWeatherResponse;
+import com.umar.payload.response.external.SpaceWeatherResponse;
 import com.umar.payload.response.external.TleData;
 import com.umar.service.IExternalIntegrationService;
 import jakarta.validation.constraints.NotBlank;
@@ -8,7 +9,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -27,18 +27,20 @@ public class ExternalAPIController {
     }
 
     @GetMapping("/space-weather/current")
-    public ResponseEntity<CurrentWeatherResponse> getCurrentSpaceWeather(){
-        CurrentWeatherResponse response = integrationService.getCurrentWeather();
+    public ResponseEntity<SpaceWeatherResponse> getCurrentSpaceWeather(){
+        SpaceWeatherResponse response = integrationService.getCurrentWeather();
         return ResponseEntity.status(HttpStatus.OK).body(response);
     }
 
     @GetMapping("/space-weather/history")
     public ResponseEntity<Void> getHistorySpaceWeather(@RequestParam("startDate")LocalDateTime startDate,@RequestParam("endDate") LocalDateTime endDate){
+        this.integrationService.getWeatherHistory(startDate,endDate);
         return null;
     }
 
     @GetMapping("/near-earth-objects")
     public ResponseEntity<Void> getNearEarthObjects(){
+        this.integrationService.getNearEarthObjects();
         return null;
     }
 
@@ -68,7 +70,8 @@ public class ExternalAPIController {
     }
 
     @GetMapping("/cache/stats")
-    public ResponseEntity<Void> getCacheStats(){
+    public ResponseEntity<Void> getCacheStats(@RequestParam("providerId") String providedId,@RequestParam("periodHours") String periodHours){
+
         return null;
     }
 

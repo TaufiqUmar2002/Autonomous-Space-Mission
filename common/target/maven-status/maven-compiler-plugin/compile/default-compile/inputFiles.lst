@@ -23,6 +23,7 @@ D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\sr
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\authIdentity\keyclock\KeycloakTokenResponse.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\AuthLoginResponse.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\CurrentWeatherResponse.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\SpaceWeatherResponse.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\TleData.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\mission\MissionResponse.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\mission\SatelliteResponse.java
