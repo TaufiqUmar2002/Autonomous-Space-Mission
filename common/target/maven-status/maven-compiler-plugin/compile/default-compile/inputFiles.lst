@@ -8,6 +8,7 @@ D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\sr
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\enums\external\Status.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\enums\missionRegistry\OrbitType.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\enums\missionRegistry\Status.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\exception\SpaceWeatherUnavailableException.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\exceptionController\GlobalExceptionController.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\error\ApiError.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\error\ApiException.java
@@ -15,6 +16,7 @@ D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\sr
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\error\ResourceAlreadyExistsException.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\error\ValidationErrorResponse.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\request\AuthLoginRequest.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\request\external\ProvidersRequest.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\request\mission\MissionCreateRequest.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\request\mission\NoradIdCorrectionRequest.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\request\mission\SatelliteDecommissionRequest.java
@@ -22,8 +24,17 @@ D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\sr
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\request\mission\SatelliteUpdateRequest.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\authIdentity\keyclock\KeycloakTokenResponse.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\AuthLoginResponse.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\CacheResponse.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\CurrentWeatherResponse.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\ExternalPassResponse.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\KIndexRecord.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\N2yoResponse.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\ProviderCircuitResponse.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\ProviderHealthResponse.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\ProviderResponse.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\ProvidersResponse.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\SpaceWeatherResponse.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\TleData.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\external\TrackingPasses.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\mission\MissionResponse.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\common\src\main\java\com\umar\payload\response\mission\SatelliteResponse.java

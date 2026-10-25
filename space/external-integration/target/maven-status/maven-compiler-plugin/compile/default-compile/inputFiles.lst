@@ -7,6 +7,7 @@ D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\ext
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\exchange\CelesTrakFeignClient.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\exchange\FeignClientInterceptor.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\exchange\GeomagneticFeignClient.java
+D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\exchange\GlobalErrorDecoder.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\exchange\RadiationFeignClient.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\exchange\SolarFeignClient.java
 D:\Backend\Projects\Microservices\Space Mission\AutonomousSpaceMission\space\external-integration\src\main\java\com\umar\ExternalIntegrationApplication.java

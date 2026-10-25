@@ -4,9 +4,8 @@ import com.umar.exception.SpaceWeatherUnavailableException;
 import com.umar.exchange.CelesTrakFeignClient;
 import com.umar.hook.FallbackDataSourceHook;
 import com.umar.hook.ResponseNormalizationHook;
-import com.umar.payload.response.external.CurrentWeatherResponse;
-import com.umar.payload.response.external.SpaceWeatherResponse;
-import com.umar.payload.response.external.TleData;
+import com.umar.payload.request.external.ProvidersRequest;
+import com.umar.payload.response.external.*;
 import io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +19,8 @@ import tools.jackson.databind.ObjectMapper;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.List;
+import java.util.UUID;
 import java.util.function.Supplier;
 
 @Service
@@ -97,8 +98,38 @@ public class ExternalIntegrationService implements IExternalIntegrationService{
     }
 
     @Override
-    public void getNearEarthObjects() {
+    public ExternalPassResponse getNearEarthObjects(Double observerLatitude, Double observerLongitude, Integer days) {
+        return null;
+    }
 
+    @Override
+    public ProvidersResponse createProvider(ProvidersRequest request) {
+        return null;
+    }
+
+    @Override
+    public List<ProviderResponse> getProviders() {
+        return List.of();
+    }
+
+    @Override
+    public ProviderHealthResponse getProviderHealth(UUID providerId) {
+        return null;
+    }
+
+    @Override
+    public ProviderCircuitResponse updateProviderCircuitBreaker(String providerId, String desiredState, String reason) {
+        return null;
+    }
+
+    @Override
+    public List<CacheResponse> getCacheStats(String providerId, String periodHours) {
+        return List.of();
+    }
+
+    @Override
+    public TrackingPasses getSatellitePasses(Integer noradId, Double observerLatitude, Double observerLongitude, Integer days) {
+        return null;
     }
 
     private TleData liveTleFallback(String nordId,Exception e){

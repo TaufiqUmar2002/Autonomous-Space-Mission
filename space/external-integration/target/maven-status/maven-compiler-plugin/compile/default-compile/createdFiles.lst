@@ -12,6 +12,7 @@ com\umar\grpc\ExternalIntegrationServiceGrpc$ExternalIntegrationServiceBlockingV
 com\umar\entity\CallHistory$CallHistoryBuilder.class
 com\umar\grpc\GetCachedTleResponse.class
 com\umar\exchange\CelesTrakFeignClient.class
+com\umar\exchange\GlobalErrorDecoder.class
 com\umar\config\RedisConfig.class
 com\umar\grpc\GetCachedTleResponse$Builder.class
 com\umar\hook\ResponseNormalizationHook.class
@@ -23,6 +24,7 @@ com\umar\model\ProviderCredentialSecret.class
 com\umar\grpc\ExternalIntegrationServiceGrpc$MethodHandlers.class
 com\umar\grpc\StreamProviderHealthRequest.class
 com\umar\exchange\SolarFeignClient.class
+com\umar\service\ExternalIntegrationService$Result.class
 com\umar\grpc\ExternalIntegrationServiceGrpc$4.class
 com\umar\grpc\ExternalIntegrationServiceGrpc$ExternalIntegrationServiceStub.class
 com\umar\grpc\ProviderHealthUpdate.class
