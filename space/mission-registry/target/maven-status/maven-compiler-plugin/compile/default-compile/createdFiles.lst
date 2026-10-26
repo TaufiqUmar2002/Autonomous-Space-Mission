@@ -1,0 +1,13 @@
+com\umar\entity\Mission.class
+com\umar\serviceinterface\IMissionService.class
+com\umar\repository\MissionRepository.class
+com\umar\serviceinterface\ISatelliteService.class
+com\umar\service\MissionService.class
+com\umar\dto\AuditLogEvent$AuditLogEventBuilder.class
+com\umar\entity\Satellite$SatelliteBuilder.class
+com\umar\dto\AuditLogEvent.class
+com\umar\entity\Mission$MissionBuilder.class
+com\umar\entity\Satellite.class
+com\umar\service\SatelliteService.class
+com\umar\MissionRegistryApplication.class
+com\umar\repository\SatelliteRepository.class

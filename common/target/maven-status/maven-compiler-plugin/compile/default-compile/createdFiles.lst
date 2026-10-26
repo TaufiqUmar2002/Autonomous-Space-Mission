@@ -31,7 +31,6 @@ com\umar\enums\authIdentity\Status.class
 com\umar\payload\error\ResourceAlreadyExistsException.class
 com\umar\payload\response\external\ProviderHealthResponse.class
 com\umar\payload\response\mission\MissionResponse.class
-SatelliteDecommissionRequest$SatelliteDecommissionRequestBuilder.class
 com\umar\payload\request\AuthLoginRequest.class
 com\umar\payload\request\mission\MissionCreateRequest$MissionCreateRequestBuilder.class
 com\umar\payload\error\ValidationErrorResponse.class
@@ -48,6 +47,7 @@ com\umar\payload\response\external\SpaceWeatherResponse$GeomagneticConditions.cl
 com\umar\payload\response\external\ExternalPassResponse.class
 com\umar\payload\response\external\SpaceWeatherResponse$RadiationConditions.class
 com\umar\payload\response\external\ProviderCircuitResponse$ProviderCircuitResponseBuilder.class
+com\umar\payload\request\mission\SatelliteDecommissionRequest.class
 com\umar\payload\response\external\ExternalPassResponse$PassDto.class
 com\umar\payload\error\ApiException$ApiExceptionBuilder.class
 com\umar\payload\response\authIdentity\keyclock\KeycloakTokenResponse.class
@@ -55,7 +55,6 @@ com\umar\enums\external\CircuitOverride.class
 com\umar\payload\response\external\SpaceWeatherResponse$SolarConditions.class
 com\umar\enums\missionRegistry\Status.class
 com\umar\payload\response\external\TrackingPasses$TrackingPassesBuilder.class
-SatelliteDecommissionRequest.class
 com\umar\payload\request\mission\SatelliteUpdateRequest.class
 com\umar\payload\request\mission\NoradIdCorrectionRequest$NoradIdCorrectionRequestBuilder.class
 com\umar\payload\response\external\CurrentWeatherResponse.class
@@ -65,6 +64,7 @@ com\umar\payload\response\external\CurrentWeatherResponse$Condition$Radiation$Ra
 com\umar\payload\response\external\N2yoResponse$Pass.class
 com\umar\payload\error\ApiError$ApiErrorBuilder.class
 com\umar\payload\response\mission\MissionResponse$MissionResponseBuilder.class
+com\umar\payload\request\mission\SatelliteDecommissionRequest$SatelliteDecommissionRequestBuilder.class
 com\umar\payload\response\external\CurrentWeatherResponse$Condition$Geomagnetic.class
 com\umar\payload\response\external\CurrentWeatherResponse$Condition$Radiation.class
 com\umar\payload\response\external\SpaceWeatherResponse$RadiationReading.class

@@ -21,7 +21,9 @@ public class MissionCreateRequest {
     private String missionName;
     @NotBlank(message = "Owning organization is required")
     private String owningOrganization;
-    @NotNull(message = "Status is required")
-    private Status status;
+    @NotNull(message = "mission Start Date is required")
+    private String missionStartDate;
+    @NotBlank(message = "Description is required")
+    private String description;
 
 }
